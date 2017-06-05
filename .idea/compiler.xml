@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="LFT-Web" target="1.5" />
+      <module name="LFT-Web" target="1.7" />
       <module name="LFT-Web-Test" target="1.7" />
     </bytecodeTargetLevel>
   </component>
