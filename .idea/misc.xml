@@ -7,7 +7,7 @@
       </list>
     </option>
   </component>
-  <component name="OctanePluginState" EXPECTED_COMMIT_MESSAGE="{&quot;value&quot;:&quot;Trimmed down the pom file from when I added a bunch of extra stuff&quot;}" />
+  <component name="OctanePluginState" EXPECTED_COMMIT_MESSAGE="{&quot;value&quot;:&quot;Making sure the new pom file makes it to GitHub&quot;}" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
