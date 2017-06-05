@@ -7,7 +7,7 @@
       </list>
     </option>
   </component>
-  <component name="OctanePluginState" EXPECTED_COMMIT_MESSAGE="{&quot;value&quot;:&quot;Added &lt;testSourceDirectory&gt;src/test/java&lt;\/testSourceDirectory&gt; to the pom file. Made sure the surefire plugin was downloaded.&quot;}" />
+  <component name="OctanePluginState" EXPECTED_COMMIT_MESSAGE="{&quot;value&quot;:&quot;Removed scope element from junit dependency&quot;}" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
