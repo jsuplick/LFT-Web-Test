@@ -32,6 +32,7 @@
                     <identification>
                         <properties>
                             <property name="Name" type="string" isRegExp="false"></property>
+                            <property name="Url" type="string" isRegExp="false">http://www2.orasi.com/l/42712/2015-10-07/3p6frr</property>
                         </properties>
                     </identification>
                     <children>
@@ -68,17 +69,6 @@
                             </identification>
                         </object>
                         <object type="EditField" technology="Web">
-                            <name>LastName</name>
-                            <codeName>LastNameEditField</codeName>
-                            <identification>
-                                <properties>
-                                    <property name="Type" type="string" isRegExp="false">text</property>
-                                    <property name="TagName" type="string" isRegExp="false">INPUT</property>
-                                    <property name="Name" type="string" isRegExp="false">42712_172272pi_42712_172272</property>
-                                </properties>
-                            </identification>
-                        </object>
-                        <object type="EditField" technology="Web">
                             <name>FirstName</name>
                             <codeName>FirstNameEditField</codeName>
                             <identification>
@@ -107,6 +97,17 @@
                                 <properties>
                                     <property name="TagName" type="string" isRegExp="false">SELECT</property>
                                     <property name="Name" type="string" isRegExp="false">42712_172266pi_42712_172266</property>
+                                </properties>
+                            </identification>
+                        </object>
+                        <object type="EditField" technology="Web">
+                            <name>LastName</name>
+                            <codeName>LastNameEditField</codeName>
+                            <identification>
+                                <properties>
+                                    <property name="Type" type="string" isRegExp="false">text</property>
+                                    <property name="TagName" type="string" isRegExp="false">INPUT</property>
+                                    <property name="Name" type="string" isRegExp="false">42712_172272pi_42712_172272</property>
                                 </properties>
                             </identification>
                         </object>

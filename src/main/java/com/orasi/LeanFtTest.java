@@ -42,7 +42,7 @@ public class LeanFtTest extends UnitTestClassBase {
         Browser browser;
 
         //open www.orasi.com
-        browser = BrowserFactory.launch(BrowserType.FIREFOX);
+        browser = BrowserFactory.launch(BrowserType.CHROME);
         browser.navigate("http://www.orasi.com");
 
         //Contact Us
@@ -97,6 +97,7 @@ public class LeanFtTest extends UnitTestClassBase {
         AppModel appmodel = new AppModel(browser2);
         appmodel.OrasiHome().sync();
         appmodel.OrasiHome().CONTACTUSWebElement().click();
+
         appmodel.ContactUs().Frame().DepartmentListBox().select(1);
         appmodel.ContactUs().Frame().FirstNameEditField().setValue("Elmer");
         appmodel.ContactUs().Frame().LastNameEditField().setValue("Fudd");
@@ -105,7 +106,9 @@ public class LeanFtTest extends UnitTestClassBase {
         appmodel.ContactUs().Frame().CountryListBox().select("United States");
         appmodel.ContactUs().Frame().StateListBox().select("CA");
         appmodel.ContactUs().Frame().MessageEditField().setValue("Hello");
+
         Verify.isTrue(appmodel.ContactUs().Frame().exists(), "Contact Us frame exists");
+
         browser2.describe(WebElement.class, new WebElementDescription.Builder()
                 .className("recaptcha-checkbox-checkmark").tagName("DIV").innerText("").build()).click();
         browser2.close();

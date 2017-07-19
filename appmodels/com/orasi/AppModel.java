@@ -123,10 +123,10 @@ public class AppModel extends AppModelBase {		private OrasiHome OrasiHome;
 			private MessageEditField MessageEditField;
 	private CountryListBox CountryListBox;
 	private CompanyEditField CompanyEditField;
-	private LastNameEditField LastNameEditField;
 	private FirstNameEditField FirstNameEditField;
 	private EmailEditField EmailEditField;
 	private DepartmentListBox DepartmentListBox;
+	private LastNameEditField LastNameEditField;
 	private StateListBox StateListBox;
 						public Frame(TestObject parent, AppModelBase applicationModel) throws GeneralLeanFtException
 		{
@@ -135,10 +135,10 @@ public class AppModel extends AppModelBase {		private OrasiHome OrasiHome;
 					MessageEditField = new MessageEditField(this, applicationModel);
 		CountryListBox = new CountryListBox(this, applicationModel);
 		CompanyEditField = new CompanyEditField(this, applicationModel);
-		LastNameEditField = new LastNameEditField(this, applicationModel);
 		FirstNameEditField = new FirstNameEditField(this, applicationModel);
 		EmailEditField = new EmailEditField(this, applicationModel);
 		DepartmentListBox = new DepartmentListBox(this, applicationModel);
+		LastNameEditField = new LastNameEditField(this, applicationModel);
 		StateListBox = new StateListBox(this, applicationModel);
 
 			setDisplayName("Frame");
@@ -148,7 +148,7 @@ public class AppModel extends AppModelBase {		private OrasiHome OrasiHome;
 		protected com.hp.lft.sdk.web.FrameDescription createDescription() throws GeneralLeanFtException{
 			com.hp.lft.sdk.web.FrameDescription description = null; 
 			try{
-				description = new com.hp.lft.sdk.web.FrameDescription.Builder().name("").build();
+				description = new com.hp.lft.sdk.web.FrameDescription.Builder().name("").url("http://www2.orasi.com/l/42712/2015-10-07/3p6frr").build();
 			}catch(Exception e){
 				throw new GeneralLeanFtException(e.getMessage(), e);
 			}
@@ -158,10 +158,10 @@ public class AppModel extends AppModelBase {		private OrasiHome OrasiHome;
 				public MessageEditField MessageEditField() { return MessageEditField; }
 		public CountryListBox CountryListBox() { return CountryListBox; }
 		public CompanyEditField CompanyEditField() { return CompanyEditField; }
-		public LastNameEditField LastNameEditField() { return LastNameEditField; }
 		public FirstNameEditField FirstNameEditField() { return FirstNameEditField; }
 		public EmailEditField EmailEditField() { return EmailEditField; }
 		public DepartmentListBox DepartmentListBox() { return DepartmentListBox; }
+		public LastNameEditField LastNameEditField() { return LastNameEditField; }
 		public StateListBox StateListBox() { return StateListBox; }
 		
 			public class MessageEditField extends EditFieldNodeBase
@@ -242,32 +242,6 @@ public class AppModel extends AppModelBase {		private OrasiHome OrasiHome;
 				
 			}
 
-	public class LastNameEditField extends EditFieldNodeBase
-	{
-
-		
-								public LastNameEditField(TestObject parent, AppModelBase applicationModel) throws GeneralLeanFtException
-		{
-			super(parent, applicationModel);
-
-			
-			setDisplayName("LastName");
-		}
-
-		@Override
-		protected com.hp.lft.sdk.web.EditFieldDescription createDescription() throws GeneralLeanFtException{
-			com.hp.lft.sdk.web.EditFieldDescription description = null; 
-			try{
-				description = new com.hp.lft.sdk.web.EditFieldDescription.Builder().type("text").tagName("INPUT").name("42712_172272pi_42712_172272").build();
-			}catch(Exception e){
-				throw new GeneralLeanFtException(e.getMessage(), e);
-			}
-			return description;
-		}
-
-				
-			}
-
 	public class FirstNameEditField extends EditFieldNodeBase
 	{
 
@@ -337,6 +311,32 @@ public class AppModel extends AppModelBase {		private OrasiHome OrasiHome;
 			com.hp.lft.sdk.web.ListBoxDescription description = null; 
 			try{
 				description = new com.hp.lft.sdk.web.ListBoxDescription.Builder().tagName("SELECT").name("42712_172266pi_42712_172266").build();
+			}catch(Exception e){
+				throw new GeneralLeanFtException(e.getMessage(), e);
+			}
+			return description;
+		}
+
+				
+			}
+
+	public class LastNameEditField extends EditFieldNodeBase
+	{
+
+		
+								public LastNameEditField(TestObject parent, AppModelBase applicationModel) throws GeneralLeanFtException
+		{
+			super(parent, applicationModel);
+
+			
+			setDisplayName("LastName");
+		}
+
+		@Override
+		protected com.hp.lft.sdk.web.EditFieldDescription createDescription() throws GeneralLeanFtException{
+			com.hp.lft.sdk.web.EditFieldDescription description = null; 
+			try{
+				description = new com.hp.lft.sdk.web.EditFieldDescription.Builder().type("text").tagName("INPUT").name("42712_172272pi_42712_172272").build();
 			}catch(Exception e){
 				throw new GeneralLeanFtException(e.getMessage(), e);
 			}

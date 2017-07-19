@@ -15,9 +15,9 @@
     <orderEntry type="library" name="Maven: junit:junit:4.12" level="project" />
     <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
     <orderEntry type="library" name="Maven: com.hp.lft:sdk-standalone:14.0.0" level="project" />
-    <orderEntry type="library" name="Maven: com.hp.lft:report:14.0.0" level="project" />
-    <orderEntry type="library" name="Maven: com.hp.lft:reportbuilder-standalone:14.0.0" level="project" />
-    <orderEntry type="library" name="Maven: com.hp.lft:unittesting:14.0.0" level="project" />
-    <orderEntry type="library" name="Maven: com.hp.lft:verifications:14.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.hp.lft:report:report:14.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.hp.lft:reportbuilder-standalone:reportbuilder-standalone:14.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.hp.lft:unittesting:unittesting:14.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.hp.lft:verifications:verifications:14.0.0" level="project" />
   </component>
 </module>
